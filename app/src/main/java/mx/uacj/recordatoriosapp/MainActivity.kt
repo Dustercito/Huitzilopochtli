@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
             insets
 
             //Hahan't
+            //que ya se acabe el semestre
         }
     }
 }
