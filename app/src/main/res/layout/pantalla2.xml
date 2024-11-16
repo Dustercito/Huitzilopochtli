@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#41BFB3">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="284dp"
+        android:layout_height="180dp"
+        android:fontFamily="sans-serif-black"
+        android:text="A continuación se te realizará un test para verificar qué tal se encuentra tu salud. Si estás de acuerdo presiona continuar."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <TextView
+        android:id="@+id/textoIntroduccion"
+        android:layout_width="282dp"
+        android:layout_height="68dp"
+        android:fontFamily="sans-serif-black"
+        android:text="¡Hola, bienvenido a (nombre de la app)!"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <Button
+        android:id="@+id/botonContinuarTest"
+        android:layout_width="223dp"
+        android:layout_height="44dp"
+        android:text="Continuar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912"
+         />
 </androidx.constraintlayout.widget.ConstraintLayout>
