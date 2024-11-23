@@ -5,30 +5,57 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#E0F7FA"
+    android:padding="16dp"
+    >
 
     <!-- TextView con un ID correcto -->
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:id="@+id/textoIntroduccion"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toTopOf="@id/botonContinuarTest"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="sans-serif-medium"
+        android:text="¡Hola, bienvenido a (nombre de la app)!"
+        android:textAlignment="center"
+        android:textColor="#00796B"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textViewDescripcion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="A continuación se te realizará un test para verificar qué tal se encuentra tu salud. Si estás de acuerdo, presiona continuar."
+        android:textAlignment="center"
+        android:textColor="#004D40"
+        android:textSize="16sp"
+        android:lineSpacingExtra="6dp"
+        app:layout_constraintTop_toBottomOf="@id/textoIntroduccion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toTopOf="@id/botonContinuarTest"/>
+
 
     <!-- Botón para continuar -->
     <Button
         android:id="@+id/botonContinuarTest"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Continuar"
         android:textColor="#FFFFFF"
-        android:backgroundTint="#00796B"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#0097A7"
+        android:fontFamily="sans-serif-medium"
+        android:paddingVertical="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.8"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
