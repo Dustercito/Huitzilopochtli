@@ -21,6 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Pantalla del cuestionario -->
+        <activity android:name=".pantallas.PantallaCuestionario" />
     </application>
 
 </manifest>
